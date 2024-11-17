@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image"
-import logo from "../images/logo.svg"
+import logo from "../../../public/atomo.svg"
 
 export function Navbar() {
 
