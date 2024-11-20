@@ -9,7 +9,7 @@ import {
   FaFire, 
   FaCamera, 
   FaLock, 
-  FaLightbulb, 
+  FaClipboard, 
   FaNetworkWired,
   FaUserCheck 
 } from "react-icons/fa";
@@ -54,11 +54,11 @@ export const dadosServicos: TipoServico[] = [
   },
   {
     id: 4,
-    name: "Reconhecimento Facial e Biometria",
+    name: "Instalação e Manutenção de Leitores Faciais e Biometria",
     description: [
-      "Sistema de reconhecimento facial com IA para controle de acesso",
-      "Biometria multimodal (facial, digital e íris)",
-      "Software anti-spoofing e detecção de vida"
+      "Instalação de leitores biométricos para controle de acesso",
+      "Manutenção preventiva e corretiva de sistemas de biometria",
+      "Soluções personalizadas para ambientes corporativos e escritórios"
     ],
     icon: FaUserCheck,
   },
@@ -130,7 +130,7 @@ export const dadosServicos: TipoServico[] = [
       "Padronização dos quadros de distribuição com etiquetas e diagramas.",
       "Auditoria do sistema elétrico para otimizar e garantir a conformidade com as normas"
     ],
-    icon: FaLightbulb,
+    icon: FaClipboard,
   },
   {
     id: 12,
