@@ -18,11 +18,11 @@ export default function Contato() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* E-mail */}
         <a
-          href="mailto:atomo@gmail.com"
+          href="mailto:atomomanutencao@gmail.com"
           className="flex items-center gap-4 bg-white text-gray-800 hover:text-blue-600 p-6 rounded-xl shadow-md transition-transform transform hover:scale-105"
         >
           <FaEnvelope className="text-stone-600 text-3xl" />
-          <span className="text-lg font-semibold">atomo@gmail.com</span>
+          <span className="text-lg font-semibold">atomomanutencao@gmail.com</span>
         </a>
 
         {/* Telefone */}

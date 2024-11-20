@@ -35,7 +35,7 @@ export default function Footer() {
                 </button>
               </li>
               <li>
-                  contato@atomo.com 
+                atomomanutencao@gmail.com
               </li>
               <li className="ml-4">
             
