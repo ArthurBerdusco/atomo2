@@ -1,3 +1,4 @@
+import About from "./components/About"
 import Clientes from "./components/Clientes"
 import Contato from "./components/Contato"
 import Footer from "./components/Footer"
@@ -17,6 +18,8 @@ export default function Home() {
             <main>
 
                 <Hero id="hero"/>
+
+                <About />
 
                 <Services />
 

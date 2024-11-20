@@ -1,23 +1,23 @@
 import Image from "next/image";
 import cbre from "@clientes/cbre.png";
 import zeiss from "@clientes/zeiss.png";
-import google from "@clientes/google.png";
-import nike from "@clientes/nike.png";
+import vertin from "@clientes/vertin.png";
+import levis from "@clientes/levis.png";
 import thales from "@clientes/thales.png";
 import iugu from "@clientes/iugu.png";
 import gm from "@clientes/gm.png";
-import adidas from "@clientes/adidas.png";
+import leroy from "@clientes/leroy.jpg";
 
 export default function Clientes() {
     const clientes = [
         { id: 1, src: cbre, alt: "CBRE Logo" },
-        { id: 2, src: zeiss, alt: "Zeiss Logo 2" },
-        { id: 4, src: nike, alt: "Nike Logo 4" },
-        { id: 3, src: google, alt: "Google Logo 3" },
+        { id: 2, src: zeiss, alt: "Zeiss Logo" },
+        { id: 4, src: levis, alt: "Levis Logo " },
+        { id: 3, src: vertin, alt: "Vertin Logo" },
         { id: 5, src: thales, alt: "Thales Logo" },
         { id: 6, src: iugu, alt: "Iugu Logo" },
         { id: 7, src: gm, alt: "GM Financial" },
-        { id: 8, src: adidas, alt: "Adidas Logo 8" },
+        { id: 8, src: leroy, alt: "Leroy Logo" },
     ];
 
     return (

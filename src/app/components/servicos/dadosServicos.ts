@@ -11,7 +11,8 @@ import {
   FaCamera, 
   FaLock, 
   FaLightbulb, 
-  FaNetworkWired 
+  FaNetworkWired,
+  FaUserCheck 
 } from "react-icons/fa";
 
 export interface TipoServico {
@@ -54,13 +55,13 @@ export const dadosServicos: TipoServico[] = [
   },
   {
     id: 4,
-    name: "Automação",
+    name: "Reconhecimento Facial e Biometria",
     description: [
-      "Configuração de sistemas de automação residencial.",
-      "Automação de escritórios e sistemas industriais.",
-      "Integração de dispositivos IoT e sistemas inteligentes."
+      "Sistema de reconhecimento facial com IA para controle de acesso",
+      "Biometria multimodal (facial, digital e íris)",
+      "Software anti-spoofing e detecção de vida"
     ],
-    icon: FaCogs,
+    icon: FaUserCheck,
   },
   {
     id: 5,
