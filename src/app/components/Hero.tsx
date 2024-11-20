@@ -7,7 +7,7 @@ export default function Hero({ id }: { id: string }) {
   return (
     <section
       id={id}
-      className="bg-sky-950 text-white rounded-3xl grid max-w-screen-xl mt-24 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 relative"
+      className="bg-sky-950 text-white rounded-3xl grid max-w-screen-xl mt-12 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12 relative"
     >
       {/* Conteúdo principal */}
       <div className="mr-auto place-self-center lg:col-span-7 px-6 py-12 md:px-12 md:py-16 lg:px-24 lg:py-28 z-10">

@@ -36,9 +36,9 @@ export const dadosServicos: TipoServico[] = [
     id: 2,
     name: "Civil",
     description: [
-      "Reformas e construção de estruturas.",
+      "Construção e manutenção de paredes de drywall.",
       "Reparos em paredes, pisos e tetos.",
-      "Impermeabilização de áreas internas e externas."
+      "Pintura e acabamentos em geral."
     ],
     icon: FaBuilding,
   },
@@ -66,7 +66,7 @@ export const dadosServicos: TipoServico[] = [
     id: 5,
     name: "Portas automáticas",
     description: [
-      "Automatização de portas de vidro e portões residenciais.",
+      "Manutenção de portas de vidro.",
       "Manutenção de motores e sensores para portas automáticas.",
       "Instalação de sistemas de controle remoto para portões."
     ],
@@ -86,7 +86,7 @@ export const dadosServicos: TipoServico[] = [
     id: 7,
     name: "Ar Condicionado",
     description: [
-      "Instalação de aparelhos de ar condicionado split e central.",
+      "Instalação de aparelhos de ar condicionado split, VRF e VRV.",
       "Limpeza e manutenção preventiva de sistemas de climatização.",
       "Reparo de componentes como compressores e evaporadores."
     ],
@@ -124,11 +124,11 @@ export const dadosServicos: TipoServico[] = [
   },
   {
     id: 11,
-    name: "Eficiência Energética",
+    name: "Identificação e Padronização de Circuitos Elétricos",
     description: [
-      "Análise de consumo energético.",
-      "Instalação de iluminação LED e dispositivos de economia.",
-      "Consultoria em soluções de energia renovável."
+      "Mapeamento e identificação dos circuitos de iluminação e tomadas.",
+      "Padronização dos quadros de distribuição com etiquetas e diagramas.",
+      "Auditoria do sistema elétrico para otimizar e garantir a conformidade com as normas"
     ],
     icon: FaLightbulb,
   },
