@@ -1,5 +1,4 @@
 'use client'
-import { Badge } from '@/components/ui/badge';
 import { useSpring, animated } from '@react-spring/web';
 
 export default function About() {
@@ -13,7 +12,6 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Primeira coluna com animação */}
           <animated.div style={fadeInLeft} className="space-y-6">
-            <Badge variant="secondary">Sobre a Atomo</Badge>
             <h2 className="text-3xl font-bold text-gray-900">
               Soluções de Manutenção e Instalação para Escritórios
             </h2>
