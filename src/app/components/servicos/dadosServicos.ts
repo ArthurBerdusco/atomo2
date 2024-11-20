@@ -3,7 +3,6 @@ import {
   FaBolt, 
   FaBuilding, 
   FaWater, 
-  FaCogs, 
   FaDoorClosed, 
   FaFan, 
   FaTools, 
