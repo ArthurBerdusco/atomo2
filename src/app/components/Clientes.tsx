@@ -31,7 +31,7 @@ export default function Clientes() {
                 {clientes.map((cliente) => (
                     <div
                         key={cliente.id}
-                        className="group cursor-pointer transition-colors duration-300 flex justify-center items-center"
+                        className="group cursor-default transition-colors duration-300 flex justify-center items-center"
                     >
                         {/* Contêiner para garantir o alinhamento e tamanho do fundo */}
                         <div className="w-32 h-32 p-4 bg-white rounded-full flex justify-center items-center shadow-md">
