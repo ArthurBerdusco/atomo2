@@ -35,7 +35,7 @@ export default function RootLayout({
 
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Átomo - Serviços de Manutenção e Reparos" />
-        <meta property="og:description" content="Soluções de manutenção, instalação e reparos para escritórios, ambientes corporativos e edifícios comerciais. A Átomo garante qualidade, eficiência e atendimento personalizado." />
+        <meta property="og:description" content="Soluções de manutenção, instalação e reparos para escritórios, ambientes corporativos e edifícios comerciais." />
         <meta property="og:image" content="https://seu-dominio.com/caminho/para/imagem.jpg" />
         <meta property="og:url" content="https://atomo2.vercel.app/" />
         <meta property="og:type" content="website" />
@@ -43,7 +43,7 @@ export default function RootLayout({
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Átomo - Serviços de Manutenção e Reparos" />
-        <meta name="twitter:description" content="Soluções de manutenção, instalação e reparos para escritórios, ambientes corporativos e edifícios comerciais. A Átomo garante qualidade, eficiência e atendimento personalizado." />
+        <meta name="twitter:description" content="Soluções de manutenção, instalação e reparos para escritórios, ambientes corporativos e edifícios comerciais." />
         <meta name="twitter:image" content="https://seu-dominio.com/caminho/para/imagem.jpg" />
 
         {/* Canonical Link */}
@@ -58,7 +58,7 @@ export default function RootLayout({
             "name": "Átomo",
             "url": "https://atomo2.vercel.app/",
             "logo": "https://atomo2.vercel.app/logo.png",
-            "description": "A Átomo oferece serviços de manutenção, instalação e reparos para empresas e residências, com foco em segurança e funcionalidade.",
+            "description": "Soluções de manutenção, instalação e reparos para escritórios, ambientes corporativos e edifícios comerciais.",
             "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "+55 11 986745464",
