@@ -3,6 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import logo from "../../../public/atomo.svg";
 import { FaInstagram, FaLinkedin, FaFacebook, FaYoutube } from "react-icons/fa";
+import Link from "next/link";
+
 
 export default function Footer() {
   const [showPolicyModal, setShowPolicyModal] = useState(false);
@@ -16,18 +18,18 @@ export default function Footer() {
       <footer className="bg-white shadow dark:bg-gray-900">
         <div className="w-full max-w-screen-xl mx-auto md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
-            <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
+            <Link href="" className="flex items-center space-x-3 rtl:space-x-reverse">
               <Image width={50} height={50} src={logo} alt="Atomo Soluções Logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Atomo Soluções
               </span>
-            </a>
+            </Link>
 
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
               <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
+                <Link href="#" className="hover:underline me-4 md:me-6">
                   Sobre
-                </a>
+                </Link>
               </li>
               <li>
                 <button onClick={togglePolicyModal} className="hover:underline me-4 md:me-6">
@@ -45,26 +47,26 @@ export default function Footer() {
 
           <div className="flex justify-center mt-4 space-x-6">
             {/* Links para redes sociais */}
-            <a href="https://www.instagram.com/atomomanutencao" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+            <Link href="https://www.instagram.com/atomomanutencao" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
               <FaInstagram size={24} />
-            </a>
-            <a href="https://www.linkedin.com/company/atomomanutencao" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+            </Link>
+            <Link href="https://www.linkedin.com/company/atomomanutencao" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
               <FaLinkedin size={24} />
-            </a>
-            <a href="https://www.facebook.com/atomomanutencao" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+            </Link>
+            <Link href="https://www.facebook.com/atomomanutencao" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
               <FaFacebook size={24} />
-            </a>
-            <a href="https://www.youtube.com/c/atomomanutencao" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+            </Link>
+            <Link href="https://www.youtube.com/c/atomomanutencao" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
               <FaYoutube size={24} />
-            </a>
+            </Link>
           </div>
 
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2024{" "}
-            <a href="" className="hover:underline">
+            <Link href="" className="hover:underline">
               Atomo™
-            </a>
+            </Link>
             . Todos os direitos reservados.
           </span>
         </div>
