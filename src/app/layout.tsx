@@ -14,9 +14,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Átomo - Serviços de Manutenção e Reparos",
-  description: "Oferecemos serviços de manutenção, instalação e reparos para empresas e residências. Confie na Átomo para manter seu local seguro e funcional.",
-  keywords: "manutenção, instalação, reparos, engenharia elétrica, engenharia civil, automação, controle de acesso, Átomo",
+  title: "Átomo - Manutenção e Instalação para Ambientes Corporativos",
+  description: "Soluções inteligentes de manutenção, instalação e reparos para escritórios, ambientes corporativos e edifícios comerciais. A Átomo garante qualidade, eficiência e atendimento personalizado.",
+  keywords: "manutenção, instalação, reparos, escritórios, ambientes corporativos, edifícios comerciais, automação, controle de acesso, Átomo",
 };
 
 export default function RootLayout({
@@ -35,7 +35,7 @@ export default function RootLayout({
 
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Átomo - Serviços de Manutenção e Reparos" />
-        <meta property="og:description" content="Oferecemos serviços de manutenção, instalação e reparos para empresas e residências. Confie na Átomo para manter seu local seguro e funcional." />
+        <meta property="og:description" content="Soluções de manutenção, instalação e reparos para escritórios, ambientes corporativos e edifícios comerciais. A Átomo garante qualidade, eficiência e atendimento personalizado." />
         <meta property="og:image" content="https://seu-dominio.com/caminho/para/imagem.jpg" />
         <meta property="og:url" content="https://atomo2.vercel.app/" />
         <meta property="og:type" content="website" />
@@ -43,7 +43,7 @@ export default function RootLayout({
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Átomo - Serviços de Manutenção e Reparos" />
-        <meta name="twitter:description" content="Oferecemos serviços de manutenção, instalação e reparos para empresas e residências. Confie na Átomo para manter seu local seguro e funcional." />
+        <meta name="twitter:description" content="Soluções de manutenção, instalação e reparos para escritórios, ambientes corporativos e edifícios comerciais. A Átomo garante qualidade, eficiência e atendimento personalizado." />
         <meta name="twitter:image" content="https://seu-dominio.com/caminho/para/imagem.jpg" />
 
         {/* Canonical Link */}
