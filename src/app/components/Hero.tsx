@@ -11,9 +11,9 @@ export default function Hero({ id }: { id: string }) {
     >
       {/* Conteúdo principal */}
       <div className="mr-auto place-self-center lg:col-span-7 px-6 py-12 md:px-12 md:py-16 lg:px-24 lg:py-28 z-10">
-        <h2 className="mb-6 font-extrabold tracking-tight leading-tight text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+        <h1 className="mb-6 font-extrabold tracking-tight leading-tight text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
           Seu escritório seguro e funcionando sempre.
-        </h2>
+        </h1>
 
         <a
           href="https://wa.me/5511986745464"
