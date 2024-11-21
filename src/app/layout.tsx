@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Átomo - Manutenção e Instalação para Ambientes Corporativos",
-  description: "Soluções inteligentes de manutenção, instalação e reparos para escritórios, ambientes corporativos e edifícios comerciais. A Átomo garante qualidade, eficiência e atendimento personalizado.",
+  description: "Soluções inteligentes de manutenção, instalação e reparos para escritórios, ambientes corporativos e edifícios comerciais.",
   keywords: "manutenção, instalação, reparos, escritórios, ambientes corporativos, edifícios comerciais, automação, controle de acesso, Átomo",
 };
 
