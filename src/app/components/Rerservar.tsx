@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import servico from "@servicos/servico-detector.webp";
+import { Link } from "lucide-react";
 
 const Reserva = () => {
     return (
@@ -11,7 +12,7 @@ const Reserva = () => {
                     src={servico}
                     width={400}
                     height={400}
-                    alt="Serviço de manutenção"
+                    alt="Serviços profissionais para ambientes corporativos"
                     className="rounded-3xl shadow-md"
                 />
             </div>
@@ -19,33 +20,75 @@ const Reserva = () => {
             {/* Texto e CTA */}
             <div className="lg:col-span-6 flex flex-col justify-center items-start text-left space-y-6">
                 <h2 className="text-4xl font-extrabold text-gray-900 tracking-tight leading-tight">
-                    Contrate um{" "}
-                    <span className="text-blue-600 underline">
-                        serviço com preço fixo
-                    </span>
+                    Soluções inteligentes{" "}
+                    <span className="text-blue-600 underline">para ambientes corporativos</span>
                 </h2>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                    Nossa equipe oferece serviços de alta qualidade, incluindo instalações, reparos, manutenção e muito mais. Planeje seu próximo serviço com facilidade e confiança!
+                    Somos especializados em atender edifícios e escritórios corporativos, coworkings, fábricas, ambientes comerciais e espaços de trabalho.
                 </p>
-                <ul className="space-y-3 text-gray-800">
+                <p className="text-gray-700 text-lg leading-relaxed">
+                    Garantimos soluções personalizadas para manter seu ambiente seguro, funcional e eficiente, permitindo que você foque no crescimento do seu negócio.
+                </p>
+
+                {/* Lista com ícones */}
+                <ul className="space-y-4">
                     <li className="flex items-center gap-3">
-                        <span className="text-blue-600 text-2xl">💰</span>{" "}
-                        <span className="font-medium">Preços acessíveis</span>
+                        <span className="text-blue-600 text-3xl">🏢</span>
+                        <span className="text-gray-800 text-lg font-medium">
+                            Edifícios corporativos e escritórios
+                        </span>
                     </li>
                     <li className="flex items-center gap-3">
-                        <span className="text-blue-600 text-2xl">📅</span>{" "}
-                        <span className="font-medium">Atendimento agendado</span>
+                        <span className="text-blue-600 text-3xl">💼</span>
+                        <span className="text-gray-800 text-lg font-medium">
+                            Coworkings e espaços compartilhados
+                        </span>
                     </li>
                     <li className="flex items-center gap-3">
-                        <span className="text-blue-600 text-2xl">💳</span>{" "}
-                        <span className="font-medium">Pagamentos flexíveis</span>
+                        <span className="text-blue-600 text-3xl">🏭</span>
+                        <span className="text-gray-800 text-lg font-medium">
+                            Fábricas e indústrias
+                        </span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                        <span className="text-blue-600 text-3xl">🛍️</span>
+                        <span className="text-gray-800 text-lg font-medium">
+                            Lojas e ambientes comerciais
+                        </span>
                     </li>
                 </ul>
 
-              
-               
+                {/* Benefícios */}
+                <div className="text-gray-700 mt-6">
+                    <h3 className="text-2xl font-bold mb-4">Por que escolher a Átomo?</h3>
+                    <ul className="space-y-3">
+                        <li className="flex items-center gap-3">
+                            <span className="text-blue-600 text-2xl">✅</span>
+                            Atendimento rápido e personalizado
+                        </li>
+                        <li className="flex items-center gap-3">
+                            <span className="text-blue-600 text-2xl">✅</span>
+                            Equipe qualificada e experiente
+                        </li>
+                        <li className="flex items-center gap-3">
+                            <span className="text-blue-600 text-2xl">✅</span>
+                            Garantia de qualidade em todos os serviços
+                        </li>
+                    </ul>
+                </div>
+
+                {/* Botão CTA */}
+                <a
+                    href="tel:+5511986745464"
+                    className="inline-flex items-center justify-center px-6 py-3 font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 shadow-md mt-6"
+                >
+                    Solicite um orçamento agora
+                </a>
             </div>
         </section>
+
+
+
     );
 };
 
