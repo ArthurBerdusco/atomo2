@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import servico from "@servicos/servico-detector.webp";
-import { Link } from "lucide-react";
 
-const Reserva = () => {
+const Apresentacao = () => {
     return (
         <section className="bg-white h-auto grid max-w-screen-xl mt-12 mx-auto lg:gap-12 xl:gap-16 lg:grid-cols-12 relative px-6 py-16 rounded-3xl shadow-lg overflow-hidden">
             {/* Imagem */}
@@ -79,7 +78,8 @@ const Reserva = () => {
 
                 {/* Botão CTA */}
                 <a
-                    href="tel:+5511986745464"
+                    href="https://wa.me/5511986745464"
+                    target="_blank"
                     className="inline-flex items-center justify-center px-6 py-3 font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 shadow-md mt-6"
                 >
                     Solicite um orçamento agora
@@ -92,4 +92,4 @@ const Reserva = () => {
     );
 };
 
-export default Reserva;
+export default Apresentacao;

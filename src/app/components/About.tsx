@@ -2,7 +2,6 @@
 
 export default function About() {
 
-
   return (
     <section className="py-20 px-4" id="about">
       <div className="max-w-screen-xl mt-12 mx-auto lg:gap-8 xl:gap-0 relative">
@@ -14,11 +13,11 @@ export default function About() {
           <div className='space-y-6'>
 
             <h2 className="text-3xl font-bold text-gray-900">
-              Soluções de Manutenção e Instalação para Escritórios
+              Soluções de Manutenção e Instalação para Ambientes Corporativos
             </h2>
             <p className="text-gray-600">
-              A Átomo é especializada em serviços de manutenção e instalação para ambientes corporativos,
-              oferecendo soluções práticas e eficientes para escritórios e espaços comerciais.
+              A Átomo é especializada em serviços de manutenção e instalação para ambientes corporativos, escritórios e edifícios comerciais. 
+              Oferecemos soluções práticas, personalizadas e eficientes, garantindo funcionalidade, segurança e conforto nos espaços de trabalho.
             </p>
           </div>
 

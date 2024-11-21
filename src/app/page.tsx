@@ -4,7 +4,7 @@ import Contato from "./components/Contato"
 import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import { Navbar } from "./components/Navbar"
-import Reserva from "./components/Rerservar"
+import Apresentacao from "./components/Apresentacao"
 import Services from "./components/servicos/Servicos"
 import WhatsApp from "./components/WhatsApp"
 
@@ -23,16 +23,12 @@ export default function Home() {
 
                 <Services />
 
-
                 <Clientes />
 
-
-                <Reserva />
-
+                <Apresentacao />
 
                 <Contato />
 
-                
             </main>
 
             <WhatsApp />
