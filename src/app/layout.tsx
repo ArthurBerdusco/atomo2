@@ -26,14 +26,55 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+      {/* Open Graph Meta Tags */}
+      <meta property="og:title" content="Átomo - Serviços de Manutenção e Reparos" />
+      <meta property="og:description" content="Oferecemos serviços de manutenção, instalação e reparos para empresas e residências. Confie na Átomo para manter seu local seguro e funcional." />
+      <meta property="og:image" content="https://seu-dominio.com/caminho/para/imagem.jpg" />
+      <meta property="og:url" content="https://atomo2.vercel.app/" />
+      <meta property="og:type" content="website" />
+      
+      {/* Twitter Cards */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Átomo - Serviços de Manutenção e Reparos" />
+      <meta name="twitter:description" content="Oferecemos serviços de manutenção, instalação e reparos para empresas e residências. Confie na Átomo para manter seu local seguro e funcional." />
+      <meta name="twitter:image" content="https://seu-dominio.com/caminho/para/imagem.jpg" />
+      
+      {/* Canonical Link */}
+      <link rel="canonical" href="https://atomo2.vercel.app/" />
+      
+      {/* Dados Estruturados (JSON-LD) */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Átomo",
+            "url": "https://atomo2.vercel.app/",
+            "logo": "https://atomo2.vercel.app/logo.png",
+            "description": "A Átomo oferece serviços de manutenção, instalação e reparos para empresas e residências, com foco em segurança e funcionalidade.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+55 11 1234-5678",
+              "contactType": "Customer Service",
+              "areaServed": "BR",
+              "availableLanguage": "Portuguese"
+            },
+            "sameAs": [
+              "https://www.facebook.com/atomo",
+              "https://www.linkedin.com/company/atomo"
+            ]
+          }
+        `}
+      </script>
+    </head>
+    <body
+      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+    >
+      {children}
+    </body>
+  </html>
   );
 }
