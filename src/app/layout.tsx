@@ -38,7 +38,7 @@ export default function RootLayout({
         <meta property="og:title" content="Átomo - Serviços de Manutenção e Reparos" />
         <meta property="og:description" content="Soluções de manutenção, instalação e reparos para escritórios, ambientes corporativos e edifícios comerciais." />
         <meta property="og:image" content="https://seu-dominio.com/caminho/para/imagem.jpg" />
-        <meta property="og:url" content="https://atomo2.vercel.app/" />
+        <meta property="og:url" content="https://www.atomosolucoes.com/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Cards */}
@@ -48,7 +48,7 @@ export default function RootLayout({
         <meta name="twitter:image" content="https://seu-dominio.com/caminho/para/imagem.jpg" />
 
         {/* Canonical Link */}
-        <link rel="canonical" href="https://atomo2.vercel.app/" />
+        <link rel="canonical" href="https://www.atomosolucoes.com/" />
 
         {/* Dados Estruturados (JSON-LD) */}
         <script type="application/ld+json">
@@ -57,8 +57,8 @@ export default function RootLayout({
             "@context": "http://schema.org",
             "@type": "Organization",
             "name": "Átomo",
-            "url": "https://atomo2.vercel.app/",
-            "logo": "https://atomo2.vercel.app/logo.png",
+            "url": "https://www.atomosolucoes.com/",
+            "logo": "https://www.atomosolucoes.com/atomo.svg",
             "description": "Soluções de manutenção, instalação e reparos para escritórios, ambientes corporativos e edifícios comerciais.",
             "contactPoint": {
               "@type": "ContactPoint",
