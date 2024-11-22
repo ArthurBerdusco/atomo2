@@ -17,17 +17,17 @@ export default function Home() {
 
             <main>
 
-                <Hero id="hero"/>
+                <Hero/>
 
-                <About />
+                <About/>
 
-                <Services />
+                <Services/>
 
-                <Clientes />
+                <Clientes/>
 
-                <Apresentacao />
+                <Apresentacao/>
 
-                <Contato />
+                <Contato/>
 
             </main>
 

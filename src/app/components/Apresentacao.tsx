@@ -4,7 +4,7 @@ import servico from "@servicos/servico-detector.webp";
 
 const Apresentacao = () => {
     return (
-        <section className="bg-white h-auto grid max-w-screen-xl mt-12 mx-auto lg:gap-12 xl:gap-16 lg:grid-cols-12 relative px-6 py-16 rounded-3xl shadow-lg overflow-hidden">
+        <section  id={"apresentacao"} className="bg-white h-auto grid max-w-screen-xl mt-12 mx-auto lg:gap-12 xl:gap-16 lg:grid-cols-12 relative px-6 py-16 rounded-3xl shadow-lg overflow-hidden">
             {/* Imagem */}
             <div className="lg:col-span-6 flex flex-col justify-center items-center">
                 <Image

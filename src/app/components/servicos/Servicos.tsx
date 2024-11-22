@@ -5,7 +5,7 @@ import Servico from './Servico';
 import { dadosServicos } from './dadosServicos';
 
 const Servicos: React.FC = () => (
-    <section className="text-white rounded-3xl grid max-w-screen-xl mt-12 mx-auto lg:gap-8 xl:gap-0 relative">
+    <section id="services" className="text-white rounded-3xl grid max-w-screen-xl mt-12 mx-auto lg:gap-8 xl:gap-0 relative">
         <h2 className="text-3xl font-extrabold text-sky-950 mb-12">
             Serviços populares
         </h2>

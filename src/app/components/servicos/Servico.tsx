@@ -40,7 +40,7 @@ export default function Servico({ servico }: ServicoProps) {
               {servico.description.map((item, index) => (
                 <li key={index} className="flex items-start">
                   <span className="mr-2 text-sky-600 font-bold">•</span>
-                  <p className="text-sm">{item}</p>
+                  <p className="text-lg">{item}</p>
                 </li>
               ))}
             </ul>

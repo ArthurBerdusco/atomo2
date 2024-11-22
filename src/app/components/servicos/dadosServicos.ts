@@ -1,17 +1,17 @@
 import { IconType } from "react-icons";
-import { 
-  FaBolt, 
-  FaBuilding, 
-  FaWater, 
-  FaDoorClosed, 
-  FaFan, 
-  FaTools, 
-  FaFire, 
-  FaCamera, 
-  FaLock, 
-  FaClipboard, 
+import {
+  FaBolt,
+  FaBuilding,
+  FaWater,
+  FaDoorClosed,
+  FaFan,
+  FaTools,
+  FaFire,
+  FaCamera,
+  FaLock,
+  FaClipboard,
   FaNetworkWired,
-  FaUserCheck 
+  FaUserCheck
 } from "react-icons/fa";
 
 export interface TipoServico {
@@ -93,14 +93,14 @@ export const dadosServicos: TipoServico[] = [
     icon: FaFan,
   },
   {
-    id: 8,
-    name: "Pequenos Reparos",
-    description: [
-      "Conserto de fechaduras e dobradiças.",
-      "Troca de torneiras e chuveiros.",
-      "Ajustes em móveis e acessórios domésticos."
+    "id": 8,
+    "name": "Pequenos Reparos",
+    "description": [
+      "Ajuste e conserto de fechaduras em portas de escritórios.",
+      "Troca e reparo de torneiras e acessórios em cozinhas e banheiros.",
+      "Manutenção e ajuste de móveis corporativos, como cadeiras, mesas e armários."
     ],
-    icon: FaTools,
+    "icon": FaTools
   },
   {
     id: 9,

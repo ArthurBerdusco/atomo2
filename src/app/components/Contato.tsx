@@ -2,7 +2,7 @@ import { FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 export default function Contato() {
   return (
-    <section className="bg-white mb-12 rounded-3xl py-16 px-8 lg:px-16 mx-auto max-w-screen-xl mt-12 shadow-lg">
+    <section  id={"contato"} className="bg-white mb-12 rounded-3xl py-16 px-8 lg:px-16 mx-auto max-w-screen-xl mt-12 shadow-lg">
       {/* Título e descrição */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-extrabold text-black mb-6">

@@ -1,58 +1,123 @@
 'use client'
-import Image from "next/image"
-import logo from "../../../public/atomo.svg"
-import { useState } from 'react'
-import Link from "next/link"
+
+import { useState, useEffect } from 'react'
+import Image from 'next/image'
+import logo from '../../../public/atomo.svg'
+import { Menu, X } from 'lucide-react'
 
 export function Navbar() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
 
-    const toggleMenu = () => {
-        setIsMenuOpen(prevState => !prevState)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
     }
 
-    return (
-        <header>
-            <nav className="bg-white border-gray-200 dark:bg-gray-900">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                        <Image width={50} height={50} src={logo} alt="Atomo Soluções Logo" />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Atomo Soluções</span>
-                    </Link>
-                    <button
-                        data-collapse-toggle="navbar-default"
-                        type="button"
-                        onClick={toggleMenu}
-                        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        aria-controls="navbar-default"
-                        aria-expanded={isMenuOpen ? "true" : "false"}
-                    >
-                        <span className="sr-only">Open main menu</span>
-                        <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
-                    </button>
-                    <div className={`hidden md:block w-full md:w-auto ${isMenuOpen ? 'block' : 'hidden'}`} id="navbar-default">
-                        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                            <li>
-                                <Link href="/" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</Link>
-                            </li>
-                            <li>
-                                <Link href="/servicos" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Serviços</Link>
-                            </li>
-                            <li>
-                                <Link href="/clientes" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Clientes</Link>
-                            </li>
-                            <li>
-                                <Link href="/condicoes" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Condições</Link>
-                            </li>
-                            <li>
-                                <Link href="/contato" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contato</Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-    )
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const scrollToSection = (sectionId: any) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      const offset = 80 // Height of navbar
+      const bodyRect = document.body.getBoundingClientRect().top
+      const elementRect = element.getBoundingClientRect().top
+      const elementPosition = elementRect - bodyRect
+      const offsetPosition = elementPosition - offset
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
+    setIsMenuOpen(false)
+  }
+
+  const navLinks = [
+    { name: 'Home', section: 'hero' },
+    { name: 'Sobre', section: 'about' },
+    { name: 'Serviços', section: 'services' },
+    { name: 'Clientes', section: 'clientes' },
+    { name: 'Apresentação', section: 'apresentacao' },
+    { name: 'Contato', section: 'contato' }
+  ]
+
+  return (
+    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-white/90 backdrop-blur-sm shadow-md' : 'bg-transparent'
+    }`}>
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
+          {/* Logo */}
+          <div className="flex-shrink-0 flex items-center">
+            <Image
+              width={40}
+              height={40}
+              src={logo}
+              alt="Atomo Soluções Logo"
+              className="cursor-pointer"
+              onClick={() => scrollToSection('hero')}
+            />
+            <span className="ml-3 text-xl font-semibold text-gray-900 dark:text-white">
+              Atomo Soluções
+            </span>
+          </div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            {navLinks.map((link) => (
+              <button
+                key={link.section}
+                onClick={() => scrollToSection(link.section)}
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+              >
+                {link.name}
+              </button>
+            ))}
+          </div>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+            >
+              {isMenuOpen ? (
+                <X className="block h-6 w-6" />
+              ) : (
+                <Menu className="block h-6 w-6" />
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        <div
+          className={`md:hidden transition-all duration-300 ease-in-out ${
+            isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
+          }`}
+        >
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-white/90 backdrop-blur-sm rounded-lg shadow-lg">
+            {navLinks.map((link) => (
+              <button
+                key={link.section}
+                onClick={() => scrollToSection(link.section)}
+                className="w-full text-left text-gray-700 hover:text-blue-600 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+              >
+                {link.name}
+              </button>
+            ))}
+          </div>
+        </div>
+      </nav>
+    </header>
+  )
 }
+
+export default Navbar
