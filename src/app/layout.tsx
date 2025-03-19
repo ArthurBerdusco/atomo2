@@ -28,15 +28,15 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="pt-BR">
       <head>
-        {/* Google tag (gtag.js) - Adicionando a tag imediatamente após o head */}
-        <!-- Google tag (gtag.js) -->
+        {/* Google tag (gtag.js) */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYV8CL5R73"></script>
         <script>
+          {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', 'G-YYV8CL5R73');
+          `}
         </script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
