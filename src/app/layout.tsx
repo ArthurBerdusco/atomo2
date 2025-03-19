@@ -41,6 +41,33 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           }}
         />
 
+        {/* Iubenda Cookie Consent */}
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+            var _iub = _iub || [];
+            _iub.csConfiguration = {"siteId":3969297,"cookiePolicyId":75317269,"lang":"pt-BR","storage":{"useSiteId":true}};
+          `,
+          }}
+        />
+        <script
+          type="text/javascript"
+          src="https://cs.iubenda.com/autoblocking/3969297.js"
+          async
+        />
+        <script
+          type="text/javascript"
+          src="//cdn.iubenda.com/cs/gpp/stub.js"
+          async
+        />
+        <script
+          type="text/javascript"
+          src="//cdn.iubenda.com/cs/iubenda_cs.js"
+          charset="UTF-8"
+          async
+        />
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
 
