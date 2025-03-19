@@ -19,9 +19,9 @@ export default function Footer() {
         <div className="w-full max-w-screen-xl mx-auto md:py-8">
           <div className="sm:flex sm:items-center sm:justify-between">
             <Link href="" className="flex items-center space-x-3 rtl:space-x-reverse">
-              <Image width={50} height={50} src={logo} alt="Atomo Soluções Logo" />
+              <Image width={50} height={50} src={logo} alt="Átomo Soluções Logo" />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Atomo Soluções
+                Átomo Soluções
               </span>
             </Link>
 
@@ -65,7 +65,7 @@ export default function Footer() {
           <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2024{" "}
             <Link href="" className="hover:underline">
-              Atomo™
+              Átomo™
             </Link>
             . Todos os direitos reservados.
           </span>

@@ -60,12 +60,12 @@ export function Navbar() {
               width={40}
               height={40}
               src={logo}
-              alt="Atomo Soluções Logo"
+              alt="Átomo Soluções Logo"
               className="cursor-pointer"
               onClick={() => scrollToSection('hero')}
             />
             <span className="ml-3 text-xl font-semibold text-gray-900 dark:text-white">
-              Atomo Soluções
+              Átomo Soluções
             </span>
           </div>
 
