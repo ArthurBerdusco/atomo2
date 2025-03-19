@@ -11,7 +11,7 @@ const WhatsApp: React.FC = () => {
         <aside>
             <button
                 onClick={handleClick}
-                className="fixed bottom-6 right-6 bg-green-500 text-white rounded-full shadow-lg p-4 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 transition-all duration-300 hover:brightness-125"
+                className="fixed bottom-16 right-4 bg-green-500 text-white rounded-full shadow-lg p-4 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 transition-all duration-300 hover:brightness-125"
                 title="Fale conosco pelo WhatsApp"
             >
                 <FaWhatsapp size={30} />
