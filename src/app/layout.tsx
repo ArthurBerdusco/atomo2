@@ -64,8 +64,8 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <script
           type="text/javascript"
           src="//cdn.iubenda.com/cs/iubenda_cs.js"
-          charset="UTF-8"
           async
+          charSet="UTF-8" // Usando charSet em vez de charset
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
