@@ -31,6 +31,7 @@ export default function Contato() {
         setStatus(`Erro ao enviar a mensagem: ${data.message || "Tente novamente."}`);
       }
     } catch (error) {
+      console.log(error)
       setStatus("Erro ao conectar ao servidor. Verifique sua conexão e tente novamente.");
     } finally {
       setLoading(false);
@@ -56,8 +57,6 @@ export default function Contato() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTelefone(formatarTelefone(e.target.value));
   };
-
-
 
   return (
     <section id="contato" className="bg-white mb-12 rounded-3xl py-16 px-8 lg:px-16 mx-auto max-w-screen-xl mt-12 shadow-lg">
