@@ -89,21 +89,8 @@ export default function ServiceCarousel() {
       pagination={{ clickable: true }}
       className="rounded-xl grid max-w-screen-xl mt-24 shadow-2xl"
       onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-      // Adicionar estilos globais para remover o outline dos botões de navegação
-      onInit={(swiper) => {
-        // Removemos o outline dos botões de navegação
-        if (typeof document !== 'undefined') {
-          const style = document.createElement('style');
-          style.innerHTML = `
-            .swiper-button-next:focus, 
-            .swiper-button-prev:focus,
-            .swiper-pagination-bullet:focus {
-              outline: none !important;
-            }
-          `;
-          document.head.appendChild(style);
-        }
-      }}
+      
+      
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index} className="relative">

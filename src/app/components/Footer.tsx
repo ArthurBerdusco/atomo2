@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import logo from "../../../public/atomo.svg";
-import { FaInstagram, FaLinkedin, FaFacebook, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
 
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { FaPhone, FaEnvelope, FaWhatsapp, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaWhatsapp, FaMapMarkerAlt } from "react-icons/fa";
 import { useState } from "react";
 
 export default function Contato() {
