@@ -45,25 +45,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="flex justify-center mt-4 space-x-6">
-            {/* Links para redes sociais */}
-            <Link href="https://www.instagram.com/atomomanutencao" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-              <FaInstagram size={24} />
-            </Link>
-            <Link href="https://www.linkedin.com/company/atomomanutencao" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-              <FaLinkedin size={24} />
-            </Link>
-            <Link href="https://www.facebook.com/atomomanutencao" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-              <FaFacebook size={24} />
-            </Link>
-            <Link href="https://www.youtube.com/c/atomomanutencao" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-              <FaYoutube size={24} />
-            </Link>
-          </div>
 
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2024{" "}
+            © 2025{" "}
             <Link href="" className="hover:underline">
               Átomo™
             </Link>

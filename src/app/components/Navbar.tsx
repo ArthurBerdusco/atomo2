@@ -45,13 +45,13 @@ export function Navbar() {
     { name: 'Serviços', section: 'services' },
     { name: 'Clientes', section: 'clientes' },
     { name: 'Apresentação', section: 'apresentacao' },
-    { name: 'Contato', section: 'contato' }
+    { name: 'Contato', section: 'contato' },
+    { name: '(11) 98674-5464', section: 'telefone' }
   ]
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/90 backdrop-blur-sm shadow-md' : 'bg-transparent'
-    }`}>
+    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-sm shadow-md' : 'bg-transparent'
+      }`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
@@ -70,15 +70,20 @@ export function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
             {navLinks.map((link) => (
               <button
                 key={link.section}
                 onClick={() => scrollToSection(link.section)}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
               >
-                {link.name}
+                {link.section === 'telefone' ? (
+                  <span className="text-blue-600 text-lg">{link.name}</span>
+                ) : (
+                  link.name
+                )}
               </button>
+
             ))}
           </div>
 
@@ -99,9 +104,8 @@ export function Navbar() {
 
         {/* Mobile Menu */}
         <div
-          className={`md:hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
-          }`}
+          className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
+            }`}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white/90 backdrop-blur-sm rounded-lg shadow-lg">
             {navLinks.map((link) => (

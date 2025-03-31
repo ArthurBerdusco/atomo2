@@ -40,7 +40,7 @@ export default function Clientes() {
                                 {clientes.map((cliente) => (
                                     <div
                                         key={cliente.id}
-                                        className="m-5 relative min-w-[200px] h-24 bg-white rounded-lg shadow-lg p-4 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 filter grayscale hover:grayscale-0 cursor-pointer"
+                                        className="m-5 relative min-w-[200px] h-24 bg-white rounded-lg shadow-lg p-4 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 filter hover:grayscale-0 cursor-pointer"
                                     >
                                         <div className="w-full h-full relative flex items-center justify-center">
                                             <Image
@@ -59,7 +59,7 @@ export default function Clientes() {
                                 {clientes.map((cliente) => (
                                     <div
                                         key={`${cliente.id}-duplicate`}
-                                        className="m-5 relative min-w-[200px] h-24 bg-white rounded-lg shadow-lg p-4 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 filter grayscale hover:grayscale-0 cursor-pointer"
+                                        className="my-5 ml-5 relative min-w-[200px] h-24 bg-white rounded-lg shadow-lg p-4 transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 filter hover:grayscale-0 cursor-pointer"
                                     >
                                         <div className="w-full h-full relative flex items-center justify-center">
                                             <Image
