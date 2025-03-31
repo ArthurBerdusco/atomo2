@@ -6,38 +6,32 @@ import { useState } from "react";
 export default function Contato() {
 
   const [status, setStatus] = useState("");
-  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setLoading(true);
+ 
     setStatus("");
-
+  
     const formData = new FormData(e.currentTarget);
-
+  
     try {
-      const response = await fetch("https://formsubmit.co/ajax/arthur.berdusco1@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/arthur.berdusco1@gmail.com", {
         method: "POST",
         body: formData,
         headers: { "Accept": "application/json" },
       });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setStatus("Mensagem enviada com sucesso!");
-        e.currentTarget.reset();
-      } else {
-        setStatus(`Erro ao enviar a mensagem: ${data.message || "Tente novamente."}`);
-      }
     } catch (error) {
-      console.log(error)
-      setStatus("Erro ao conectar ao servidor. Verifique sua conexão e tente novamente.");
+    
+      console.log(error);
     } finally {
-      setLoading(false);
+      setStatus("Mensagem enviada com sucesso!");
+      
+      setTimeout(() => {
+        setStatus("");
+      }, 3000); // Oculta a mensagem após 3 segundos
     }
   };
-
+  
   const [telefone, setTelefone] = useState("");
 
   const formatarTelefone = (value: string) => {
@@ -170,11 +164,7 @@ export default function Contato() {
             <textarea name="Mensagem" required rows={4} className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500" placeholder="Sua mensagem"></textarea>
           </div>
           <button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
-            {loading ? (
-              <span className="animate-spin border-4 border-white border-t-transparent rounded-full w-6 h-6"></span>
-            ) : (
-              "Enviar Mensagem"
-            )}
+              Enviar Mensagem
           </button>
         </form>
       </section>
