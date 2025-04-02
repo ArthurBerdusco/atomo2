@@ -83,7 +83,7 @@ export default function Contato() {
 
         {/* Telefone */}
         <a
-          href="tel:+5511986745464"
+          href="tel:+5511964685030"
           className="flex items-center gap-4 bg-gray-50 text-gray-800 hover:text-blue-500 p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg border border-gray-100"
         >
           <div className="bg-blue-100 p-3 rounded-full">
@@ -91,13 +91,13 @@ export default function Contato() {
           </div>
           <div>
             <p className="text-sm text-gray-500 font-medium">Telefone</p>
-            <span className="text-lg font-semibold">+55 (11) 98674-5464</span>
+            <span className="text-lg font-semibold">+55 (11) 96468-5030</span>
           </div>
         </a>
 
         {/* WhatsApp */}
         <a
-          href="https://wa.me/5511986745464"
+          href="https://wa.me/5511964685030"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-4 bg-gray-50 text-gray-800 hover:text-green-500 p-6 rounded-xl shadow-md transition duration-300 hover:shadow-lg border border-gray-100"
@@ -107,7 +107,7 @@ export default function Contato() {
           </div>
           <div>
             <p className="text-sm text-gray-500 font-medium">WhatsApp</p>
-            <span className="text-lg font-semibold">+55 (11) 98674-5464</span>
+            <span className="text-lg font-semibold">+55 (11) 96468-5030</span>
           </div>
         </a>
 

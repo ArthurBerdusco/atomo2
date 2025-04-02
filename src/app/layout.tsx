@@ -92,7 +92,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
                 "Soluções de manutenção, instalação e reparos para escritórios, ambientes corporativos e edifícios comerciais.",
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+55 11 986745464",
+                telephone: "+55 11 964685030",
                 contactType: "Customer Service",
                 areaServed: "BR",
                 availableLanguage: "Portuguese",

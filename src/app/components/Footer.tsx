@@ -39,7 +39,7 @@ export default function Footer() {
                 atomomanutencao@gmail.com
               </li>
               <li className="ml-4">
-                (11) 98674-5464
+                (11) 96468-5030
               </li>
             </ul>
           </div>

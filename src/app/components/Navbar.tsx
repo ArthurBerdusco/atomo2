@@ -46,7 +46,7 @@ export function Navbar() {
     { name: 'Clientes', section: 'clientes' },
     { name: 'Apresentação', section: 'apresentacao' },
     { name: 'Contato', section: 'contato' },
-    { name: '(11) 98674-5464', section: 'telefone' }
+    { name: '(11) 96468-5030', section: 'telefone' }
   ]
 
   return (

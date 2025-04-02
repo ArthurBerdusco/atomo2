@@ -16,7 +16,7 @@ export default function Hero() {
         </h1>
 
         <a
-          href="https://wa.me/5511986745464"
+          href="https://wa.me/5511964685030"
           className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold text-base md:text-lg rounded-lg hover:bg-blue-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
           target="_blank"
           rel="noopener noreferrer"

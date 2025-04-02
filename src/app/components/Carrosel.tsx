@@ -137,7 +137,7 @@ export default function ServiceCarousel() {
                     className="mt-6 pt-2"
                   >
                     <a
-                      href="https://wa.me/5511986745464"
+                      href="https://wa.me/5511964685030"
                       className="inline-block px-8 py-4 bg-blue-600 text-white font-bold text-base md:text-lg rounded-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 shadow-lg"
                       target="_blank"
                       rel="noopener noreferrer"
